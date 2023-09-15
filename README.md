@@ -8,7 +8,7 @@ The Spotify Clone is a web application that replicates the first page of the Spo
 
 ## Demo
 
-You can check out a live demo of the Spotify Clone at [Demo Link](insert_demo_link_here).
+You can check out a live demo of the Spotify Clone at [Demo Link](https://sakshinirmal.github.io/SpotifyClone/).
 
 ## Technologies Used
 
