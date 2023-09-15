@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="icon" href="./assets/logo.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="main">
+       <div class="sidebar">
+          <div class="nav">
+            <div class="nav-option">
+              <i class="fa-solid fa-house"></i>
+              <a href="#"> Home</a>
+            </div>
+            <div class="nav-option">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="#">Search</a>
+            </div>
+          </div>
+          <div class="Library">
+            <div class="options">
+              <div class="lib-option nav-option">
+                <img src="./assets/library_icon.png"/>
+                <a href="#">Your Library</a>
+              </div>
+              <div class="icons">
+                <i class="fa solid fa-plus"></i>
+                <i class="fa solid fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="lib-box">
+              <div class="box">
+                <p class="box-p1">Create your first playlist</p>
+                <p> &nbsp;</p>
+                <p class="box-p2">It's easy, we'll help you</p>
+                <p> &nbsp;</p>
+                <button class="badge">Create playlist</button>
+              </div>
+              <div class="box">
+                <p class="box-p1">Let's find some podcasts to follow</p>
+                <p> &nbsp;</p>
+                <p class="box-p2">We'll keep you update on now episodes</p>
+                <p> &nbsp;</p>
+                <button class="badge">Browser podcasts</button>
+              </div>
+            </div>
+          </div>
+       </div>
+       <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./assets/backward_icon.png"/>
+           <img src="./assets/forward_icon.png" class="hide"/>
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-button"><i class="fa-regular fa-circle-down" style="margin-right: 5px"></i>Install App</button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+          <h2>Recently played</h2>
+          <div class="cards-container">
+             <div class="card">
+                <img src="assets/card1img.jpeg" />
+                <p class="card-tittle">Top 50 - Global</p>
+                <p>&nbsp;</p>
+                <p class="card-info">Your daily updates of the most played tracks right...</p>
+             </div>
+          </div>
+          <h2>Trending now near you</h2>
+          <div class="cards-container">
+             <div class="card">
+                <img src="assets/card2img.jpeg" />
+                <p class="card-tittle">Mahiye Jinna Sonna</p>
+                <p>&nbsp;</p>
+                <p class="card-info">Darshan Raval</p>
+             </div>
+             <div class="card">
+              <img src="assets/card3img.jpeg" />
+              <p class="card-tittle">Mere Pass Tum Ho</p>
+              <p>&nbsp;</p>
+              <p class="card-info">Rahat Fateh Ali Khan</p>
+           </div>
+           <div class="card">
+            <img src="assets/card4img.jpeg" />
+            <p class="card-tittle">Naa Ready (From "Leo")</p>
+            <p>&nbsp;</p>
+            <p class="card-info">Anirudh Ravichander, Thalapathy Vijay, Asal Kollar</p>
+          </div>
+          </div>
+          <h2>Featured Charts</h2>
+          <div class="cards-container">
+          <div class="card">
+            <img src="assets/card5img.jpeg" />
+            <p class="card-tittle">Top Songs - Global</p>
+            <p>&nbsp;</p>
+            <p class="card-info">Your weekly updates of the most played tracks right...</p>
+          </div><div class="card">
+            <img src="assets/card6img.jpeg" />
+            <p class="card-tittle">Top Songs - India</p>
+            <p>&nbsp;</p>
+            <p class="card-info">Your weekly updates of the most played tracks right...</p>
+          </div>
+          <div class="card">
+            <img src="assets/card1img.jpeg" />
+            <p class="card-tittle">Top 50 - Global</p>
+            <p>&nbsp;</p>
+            <p class="card-info">Your daily updates of the most played tracks right...</p>
+         </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+    <div class="music-player">
+      <div class="album">
+         <div class="album-photo">
+          <img src="assets/songplaying.png"/>
+         </div>
+         <div class="album-info">
+          <p class="song-name" style="font-weight: bold">Until I Found You </p>
+          <p class="singer-name" style="opacity: 0.6; font-size: 11px;">Stephen Sanchez</p>
+         </div>
+         <div class="like-cast">
+          <i class="fa-regular fa-heart li-ca"></i>
+          <i class="fa-brands fa-chromecast li-ca"></i>
+         </div>
+      </div>
+      <div class="player">
+        <div class="player-control">
+          <img src="assets/player_icon1.png" class="player-control-icon"/>
+          <img src="assets/player_icon2.png" class="player-control-icon"/>
+          <a href="https://open.spotify.com/playlist/1bec3EnTHqv7cGsYDztRjV"><img src="assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;"/></a>
+          <img src="assets/player_icon4.png" class="player-control-icon"/>
+          <img src="assets/player_icon5.png" class="player-control-icon"/>        
+        </div>
+        <div class="playback-bar">
+          <span class="current-time">0:00 </span>
+          <input type="range" min="0" max="300" class="progress-bar" step="1">
+          <span class="current-time">2:57 </span>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="volume">
+          <i class="fa-solid fa-volume-low"></i>
+        </div>
+        <div>
+          <input type="range" class="range" max="100" min="0">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,398 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+
+.sidebar{
+    width: 340px;
+    border-radius: 1rem;
+    background-color: #000000;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.nav{
+    background: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.lib-option img{
+height: 1.25rem;
+width: 1.25rem;
+}
+
+.Library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232222;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.25rem 0 0.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.badge:hover{
+    background-color: #000000;
+    color: #fff;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.5rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 1.5rem;
+}
+
+.dark-button{
+    background-color: #000000;
+    color: #fff;
+    
+}
+
+@media (max-width: 1000px) {
+    .hide{
+        display: none;
+    }
+}
+
+h2{
+   margin: 2rem 0 1rem 0;
+}
+
+.card{
+    background-color: #181818;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+.card:hover{
+    background: #232222;
+    transition-delay: 50ms;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card-tittle{
+    font-weight: 600;
+    padding:0.5rem 0 0 0.5rem;
+}
+
+.card-info{
+    font-size: 0.9rem;
+    padding: 0 0 0.3rem 0.5rem;
+    opacity: 0.6;
+}
+
+.footer{
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.2;
+}
+
+.play{
+    max-width: 15px;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+    display: flex;
+}
+
+.album-info{
+    font-size: 2rem;
+}
+
+.player{
+    width: 50%;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.6;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playback-bar{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.progress-bar{
+    width: 65%;
+    appearance: none;
+    justify-content: space-between;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.3;
+    padding: 0 1rem 0 1rem;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background: #ddd;
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+}
+
+.current-time{
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.music-player {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+  
+.album {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+  
+.album-photo img {
+    height: 50px; 
+    width: 50px; 
+    border-radius: 3px;
+}
+
+.singer-name{
+    padding: 0.3rem 0 0.1rem 0;
+}
+
+.like-cast{
+    margin: 2rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+    opacity: 0.5;
+    align-items: center;
+}
+
+.album-info {
+    font-size: 0.8rem;
+    margin-left: 1.5rem;
+}
+  
+/* Volume Range Input Styles */
+.controls {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .range {
+    appearance: none;
+    width: 60%;
+    height: 2.5px;
+    border-radius: 5px;
+    background: #ddd;
+    opacity: 0.7;
+    
+  }
+  
+  .range::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1bd760;
+    cursor: pointer;
+  }
+  
+  .range::-moz-range-thumb {
+    width: 10px;
+    height: 18px;
+    border: none;
+    border-radius: 50%;
+    background: #1bd760;
+    cursor: pointer;
+  }
+  
+  .volume i {
+    font-size: 1rem;
+    opacity: 0.5;
+    color: #fff;
+    margin-right: 8px;
+    padding: 1rem;
+  }
+  
+  .range::-moz-range-track {
+    background: transparent;
+    border: none;
+  }
+  
+  
+.li-ca{
+    margin-right: 0.8rem;
+}
+
